@@ -33,8 +33,12 @@
 		</h2>
 	<ul>	
 
-<script type="text/javascript">
-	
+<script type="text/java">
+
+List<String> readSmallTextFile(String "words.txt") throws IOException {
+    Path path = Paths.get("words.txt");
+    return Files.readAllLines(path, ENCODING);
+  }
 
 </script> 
 </body>

@@ -19,7 +19,7 @@
 	<div style="width: 500px; border:5px double black">
 		<center>
 			<p style="margin: 100; padding: 1px"> 
-				<i> <strong> Your Word of the Day is..</strong> </i>
+				<i> <strong> Your Word of the Day is..<span id="wotd"></span></strong> </i>
 			</p>
 		</center>
 	</div>
@@ -32,7 +32,17 @@
 			</center> 
 		</h2>
 	<ul>	
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function($){
+			var words;
+			$.get("words.json")
+			.done(function(w){
+				words = w;
+				$("#wotd").html(words[0].word);
+			});
+		});
+	</script>
 <script type="text/java">
 
 List<String> readSmallTextFile(String "words.txt") throws IOException {

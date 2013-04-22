@@ -1,12 +1,37 @@
 [
 	{
-		"word":"clandestine",
-		"def":"Characterized by, done in, or Executed with secrecy or concealment, especially for purposes of subversion or deception",
+		"word":"Clandestine",
+		"def":"Characterized by, done in, or Executed with secrecy or concealment, especially for purposes of subversion or deception.",
 		"ex":"Their Clandestine meetings went undiscovered for two years."
 	},
 	{
-		"word":"word",
-		"def":"def",
-		"ex":"ex"
+		"word":"Meticulous",
+		"def":"Taking or showing extreme care about minute details; precise; thorough.",
+		"ex":"a meticulous adherence to technicalities."
+	},
+	{
+		"word":"Oxymoron",
+		"def":"A figure of speech by which a locution produces an incongruous, seemingly self-contradictory effect.",
+		"ex":"To make haste slowly."
+	},
+	{
+		"word":"Ostentatious",
+		"def":"1.) Characterized by or given to pretentious or conspicuous show in an attempt to impress others. 2.) Intended to attract notice.",
+		"ex":"1.) An ostentatious dresser. 2.) Barrack Obama's ostentatious charity."
+	},
+	{
+		"word":"Superfluous",
+		"def":"1.) Being more than is sufficient or required; excessive. 2.) Unnecessary or needless.",
+		"ex":"It is superfluous to have 36 pairs of shoes and only wear the same 2 pairs."
+	},
+	{
+		"word":"Enigma",
+		"def":"A puzzling or inexplicable occurrence or situation.",
+		"ex":"His disappearance is an enigma that has given rise to much speculation."
+	},
+	{
+		"word":"Ambiguity",
+		"def":"Doubtfulness or uncertainty of meaning or intention.",
+		"ex":"To speak with ambiguity."
 	}
 ]

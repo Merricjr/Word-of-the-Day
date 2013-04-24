@@ -48,29 +48,26 @@
 	</div>
 </center>
 
-
-<script>
-	{
-		float: left;
+<center>
 	<ul>
 		Words, definitions, and examples brought to you by 
 		<a href="http://dictionary.reference.com">
 			Dictionary.com 
 		</a>
 	</ul>
+</center>
 
-	}
-	</script>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	
 	<script>
+
 		jQuery(document).ready(function($){
-			var words;
+			var words, d = new Date(), dow = d.getDay();
 			$.get("words.json")
 			.done(function(w){
 				words = w;
-				$("#wotd").html(words[0].word + " <h4> " + words[0].def + " </h4><h4> " + words[0].ex ) + "</h4>";
+				$("#wotd").html(words[dow].word + " <h4> " + words[dow].def + " </h4><h4> " + words[dow].ex ) + "</h4>";
 
 			});
 		});

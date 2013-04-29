@@ -1,0 +1,80 @@
+<html>
+	<head> 
+		<h1>
+		<i>
+			
+			<font color="#FFFFFF"> "Quote" of the Day. 
+
+		</i>
+		</h1>
+	</head>
+	
+<body background="temple.png.jpg">
+
+<style>
+	h1 {font-size:400%;}
+	h2 {font-size:200%;}
+	h3 {font-size:150%;}
+	h4 {font-size:75%;}
+</style>
+	
+<h2> 
+	<font color="#FFFFFF">	
+		<i> 
+			<strong> 				
+				<center>
+					<div style="width: 650px; background:#617790; border:2px solid">
+						<font face = cursive> 
+
+								<span id="qotd"> </span>
+						
+						</font>
+					</div>
+
+				</center>
+			</strong> 
+		</i> 
+	</font>
+</h2>
+<h3>
+	<center>
+		<div style="width: 650px; background: #7FA8D7 ; border:2px solid">
+
+			->  For the word of the day click <a href="wordoftheday.html"> Here </a>  <-
+
+
+		</div>
+	</center
+</h3>	
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<script>
+
+		jQuery(document).ready(function($){
+			var quotes, d = new Date(), dow = d.getDay();
+			$.get("quotes.json")
+			.done(function(q){
+				quotes = q;
+				$("#qotd").html(quotes[dow].quote + "" + quotes[dow].sig) + "" ;
+
+			});
+		});
+
+	</script>
+
+	<center>
+		<button>
+			<p>
+				<font-size="10">
+					<strong>
+						<a href="main.html"> Directory </a>
+					</strong>
+				</font>
+			<p>
+		</button>
+	 </center>
+	
+</body>
+</html>
